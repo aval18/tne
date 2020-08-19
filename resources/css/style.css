@@ -14,16 +14,6 @@
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 } @font-face {
-  font-family: 'Apple Ligothic';
-  src: local('Apple Ligothic Medium'), local('AppleLigothic-Medium'),url('../fonts/AppleLiGothicMedium.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-} @font-face {
-  font-family: 'League Spartan';
-  src: local('League Spartan'), local('LeagueSpartan-Bold'), url('../fonts/league-spartan/LeagueSpartan-Bold.otf') format('opentype');
-  font-style: normal;
-  font-weight: bold;
-} @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -34,6 +24,30 @@
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} @font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alata Regular'), local('Alata-Regular'), url(https://fonts.gstatic.com/s/alata/v2/PbytFmztEwbIoce9zqYzQ1OW.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v12/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v12/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v12/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* Universal */
@@ -69,7 +83,8 @@ ol, ul {
 
 .subtitle {
   font-size: 2.5rem;
-  font-family: 'Apple Ligothic','Roboto';
+  font-family:'Alata';
+  font-weight: bold;
 }
 
 
@@ -78,7 +93,7 @@ a:hover {
 }
 
 .al {
-  font-family: 'Apple Ligothic','Roboto';
+  font-family: 'Poppins','Roboto';
 }
 
 .mobile {
@@ -138,10 +153,9 @@ nav li {
 
 .logo {
   padding-left: 15rem;
-  font-family: 'League Spartan', 'Apple Ligothic', 'Roboto';
-  letter-spacing: 1.5rem;
+  font-family: 'Alata', 'Roboto';
+  letter-spacing: 0.4rem;
   font-size: 2rem;
-  font-weight: bold;
 }
 
 .menu {
@@ -318,7 +332,7 @@ nav li {
   }
 
   .info .title {
-    font-family: 'Apple Ligothic', 'Lato';
+    font-family: 'Poppins', 'Lato';
     font-weight: bold;
     letter-spacing: 0.8rem;
     padding: 1.5rem;
@@ -353,7 +367,7 @@ nav li {
     z-index: 2;
 }
     .code .title, .advantage .title {
-    font-size: 5rem;
+    font-size: 4rem;
     position: absolute;
     letter-spacing: 1.5rem;
   }
@@ -436,7 +450,6 @@ nav li {
 
     .gallery span {
       padding: 2rem;
-      font-weight: bold;
     }
     .gallery a:hover {
       text-decoration: none;
@@ -536,7 +549,7 @@ nav li {
     }
     .footer-box span {
       font-size: 2rem;
-      font-family: 'Apple Ligothic','Lato';
+      font-family: 'Lato';
     }
     .footer-section {
       display: flex;
