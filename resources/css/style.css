@@ -349,7 +349,7 @@ nav li {
   .code .title {
     right: 5%;
     margin-top: 4rem;
-    color: wheat;
+    color: #60899f;
     z-index: 2;
 }
     .code .title, .advantage .title {
@@ -358,7 +358,7 @@ nav li {
     letter-spacing: 1.5rem;
   }
   .colour-box {
-    background-color: wheat;
+    background-color: #60899f;
     z-index: 0;
     position: absolute;
     right: 13%;
@@ -430,7 +430,8 @@ nav li {
       margin: 3rem;
       align-items: center;
       position: relative;
-      background-color: wheat;
+      background-color: #60899f;
+      color: white;
     }
 
     .gallery span {
@@ -496,7 +497,7 @@ nav li {
   }
 
   .colour-box-small {
-    background-color: wheat;
+    background-color: #ecebe3;
     width: 8rem;
     height: 2rem;
     position: absolute;
