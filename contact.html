@@ -64,15 +64,15 @@
           </div>
           <div class="section">
             <div class="section-form">
-              <form action="action_page.php">
+              <form action="./resources/php/contact.php" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
 
-                <label for="subject">Message:</label>
-                <textarea id="message" name="message" style="height:200px"></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" style="height:200px" required></textarea>
 
                 <input type="submit" value="Submit">
             </form>
