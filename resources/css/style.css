@@ -528,6 +528,42 @@ nav li {
     padding: 4rem 15rem;
   }
 
+/* Contact */
+
+
+
+  input[type=text], input[type=email], textarea, input[type=password] {
+    display: block;
+    width: 100%; /* Full width */
+    padding: 1rem; /* Some padding */
+    border: 3px solid #ecebe3; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=submit] {
+    background-color: #ecebe3;
+    color: #60899f;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #60899f;
+    color: #ecebe3;
+    transition: 0.3s;
+  }
+
+  .section-form {
+    width: 40%;
+  }
+
+  label {
+    padding: 1rem;
+  }
 
   /* Footer */
 
@@ -548,7 +584,8 @@ nav li {
     }
     .footer-box span {
       font-size: 2rem;
-      font-family: 'Lato';
+      font-family: 'Alata';
+      color: #60899f;
     }
     .footer-section {
       display: flex;
@@ -565,10 +602,13 @@ nav li {
     footer .logo {
       padding: 0;
     }
-    footer .colour-box-small {
-      width: 6rem;
-      margin-left: 1rem;
+    .colour-circle-small {
+      width: 8rem;
       height: 8rem;
+      border-radius: 50%;
+      background-color: #ecebe3;
+      position: absolute;
+      z-index: -1;
     }
     footer a:hover {
       text-decoration: none;
@@ -846,6 +886,7 @@ nav li {
       .detail {
         width: 100%;
       }
+
       .subtitle{
         font-size: 2.5rem;
       }
@@ -874,6 +915,13 @@ nav li {
         display: block;
       }
 
+      /* Contact */
+
+      .section-form {
+        width: 100%;
+        padding: 1rem;
+      }
+
       /* Footer */
 
       footer {
@@ -889,9 +937,7 @@ nav li {
        .footer-box span {
          font-size: 1.5rem;
        }
-       footer .colour-box-small {
-         display: none;
-       }
+
        footer div {
          padding: 0;
        }

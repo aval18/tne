@@ -27,6 +27,7 @@
             <li><a href="apply.html">APPLY</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
           </ul>
         </div>
 
@@ -49,6 +50,7 @@
           <li><a href="apply.html" onclick="closeNav()">APPLY</a></li>
           <li><a href="about.html" onclick="closeNav()">ABOUT</a></li>
           <li><a href="contact.html" onclick="closeNav()">CONTACT</a></li>
+          <li><a href="members.html" onclick="closeNav()">MEMBERS</a></li>
         </ul>
       </div>
       <button class="mobile-overlay-close"><a href="javascript:void(0)" style="border-bottom:none;font-size:2.5rem;color:black" onclick="closeNav()">&times;</a></button>
@@ -59,20 +61,36 @@
 
           <div class="info">
             <span class="title">Get in Touch</span>
-            <!--<img class="subject" src="" alt="">-->
           </div>
+          <div class="section">
+            <div class="section-form">
+              <form action="action_page.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="subject">Message:</label>
+                <textarea id="message" name="message" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+
+        </div>
       </div>
 
       <!-- footer -->
       <footer>
         <div class="footer-content">
           <div class="logo">
-            <img src="resources/images/logo.png" alt="Logo">
-            <span></span>
+            <img src="resources/images/logo.png" alt="">
+            <span>The Next Exec</span>
           </div>
           <div class="footer-section">
             <div class="footer-box">
-              <div class="colour-box-small"></div>
+              <div class="colour-circle-small"></div>
               <span>Social</span>
               <ul>
                 <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
@@ -80,7 +98,7 @@
               </ul>
             </div>
             <div class="footer-box">
-              <div class="colour-box-small"></div>
+              <div class="colour-circle-small"></div>
               <span>Learn</span>
               <ul>
                 <li><a href="apply.html">Apply</a></li>

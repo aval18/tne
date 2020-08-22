@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -56,63 +55,59 @@
       <button class="mobile-overlay-close"><a href="javascript:void(0)" style="border-bottom:none;font-size:2.5rem;color:black" onclick="closeNav()">&times;</a></button>
     </div>
 
-<!-- Policies -->
+<!-- members password -->
 
-    <div id="policies">
+    <div id="password">
       <div class="info">
-        <span class="title">Application</span>
+        <span class="subtitle">Members Page</span>
       </div>
       <div class="section">
-        <div class="detail">
-          <div class="text-content">
-            <span class="subtitle">Requirements</span>
-            <span>Please make sure these requirements apply to you before applying!</span>
-            <span>1. You are 14-30 years in age</span>
-            <span>2. </span>
-            <span></span>
-            <span class="subtitle">Process & Acceptance</span>
-            <span>To apply, please complete the form below! The process will include a few questions first about you, and then about your passion for entrepreneurship. We will be asking for links for your small business (website, etsy, social media, etc.), but not to worry if you don't have all of these! We will support you at any stage of your business - whether it is just an idea in the works, or a fully operating one!</span>
-            <span>Regarding acceptance, we will not look at how fully grown your business is (we all start somewhere!), but moreso on how well your business would fit in with the other members and group. There will most likely be a balance of businesses in development level.</span>
-            <span class="subtitle">Fees</span>
-            <span>We are here to help and not add in any hidden fees. For the first launch, the first applicants will receive a month for free. If they choose to continue it will only be $15 for the next 6 months.</span>
-            <span>We will also be offering merch to accepted applicants that is open to purchase.</span>
+        <div class="section-form">
+          <span><label for="name">Name:</label></span>
+          <input type="text" id="name" name="name">
+
+          <span><label for="email">Email:</label></span>
+          <input type="email" id="email" name="email">
+
+          <span><label for="pass">Pass:</label></span>
+          <input type="password" id="pass" name="pass">
+
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="logo">
+          <img src="resources/images/logo.png" alt="">
+          <span>The Next Exec</span>
+        </div>
+        <div class="footer-section">
+          <div class="footer-box">
+            <div class="colour-circle-small"></div>
+            <span>Social</span>
+            <ul>
+              <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.facebook.com/pg/" target="_blank">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <div class="colour-circle-small"></div>
+            <span>Learn</span>
+            <ul>
+              <li><a href="apply.html">Apply</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <!-- footer -->
-      <footer>
-        <div class="footer-content">
-          <div class="logo">
-            <img src="resources/images/logo.png" alt="">
-            <span>The Next Exec</span>
-          </div>
-          <div class="footer-section">
-            <div class="footer-box">
-              <div class="colour-circle-small"></div>
-              <span>Social</span>
-              <ul>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/pg/" target="_blank">Facebook</a></li>
-              </ul>
-            </div>
-            <div class="footer-box">
-              <div class="colour-circle-small"></div>
-              <span>Learn</span>
-              <ul>
-                <li><a href="apply.html">Apply</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <p>©2020 TNE</p>
-      </footer>
-
-      </div>
+      <p>©2020 TNE</p>
+    </footer>
 
 
-      <script src="./resources/javascript/main.js"></script>
-    </body>
-  </html>
+    <script src="./resources/javascript/main.js"></script>
+  </body>
+</html>
