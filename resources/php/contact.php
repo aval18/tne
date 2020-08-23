@@ -1,11 +1,18 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "info@thenextexec.org";
-$subject = "Contact Form";
+$contactname = $_POST['contact-name'];
+$contactemail = $_POST['contact-email'];
+$contactmessage = $_POST['contact-message'];
+
+$contactcontent="From: $contactname \n Email: $contactemail \n Message: $contactmessage";
+
+$to = "info@thenextexec.org";
+$contactfrom = "info@thenextexec.org"
+
+$contactsubject = "Contact Form";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You! We will get back to you shortly :)" . " -" . "<a href='../../contact.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
+$headers = "From: $contactfrom \r\n";
+
+mail($to, $subject, $formcontent, $mailheader) or die("Something went wrong :(");
+header("Location: ../../index.html")
+echo "Thank You! We will get back to you shortly :)" . " -" . "<a href='../../contact.html' style='text-decoration:none;'> Return </a>";
 ?>
