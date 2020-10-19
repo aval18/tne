@@ -14,5 +14,5 @@ $headers = "From: $contactfrom \r\n";
 
 mail($to, $subject, $formcontent, $mailheader) or die("Something went wrong :(");
 header("Location: ../../index.html")
-echo "Thank You! We will get back to you shortly :)" . " -" . "<a href='../../contact.html' style='text-decoration:none;'> Return </a>";
+echo "Thank You! We will get back to you shortly :)" . " -" . "<a href='../../contact.html' style='text-decoration:none;'> Return to TNE</a>";
 ?>
