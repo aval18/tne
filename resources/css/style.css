@@ -37,6 +37,21 @@
   font-weight: 700;
   src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v12/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+  font-family: 'Alta';
+  src:url('../fonts/Alta-Typeface/Alta_regular.otf') format(opentype);
+  font-style:normal;
+  font-weight: 400;
+}@font-face {
+  font-family: 'Alta';
+  src:url('../fonts/Alta-Typeface/Alta_caption.otf') format(opentype);
+  font-style: bold;
+  font-weight: 700;
+}@font-face {
+  font-family: 'Alta';
+  src:url('../fonts/Alta-Typeface/Alta_light.otf') format(opentype);
+  font-style: normal;
+  font-weight: 300;
 }
 /* Universal */
 
@@ -48,6 +63,7 @@ html {
 body {
   font-family: 'Lato';
   height: 100%;
+  color: black;
 }
 
 p {
@@ -72,7 +88,7 @@ ol, ul {
 
 .subtitle {
   font-size: 2.5rem;
-  font-family:'Alata';
+  font-family:'Alta','Alata';
   font-weight: bold;
 }
 
@@ -145,7 +161,7 @@ nav li {
 
 .logo {
   padding-left: 15rem;
-  font-family: 'Alata', 'Roboto';
+  font-family: 'Alta', 'Alata';
   letter-spacing: 0.4rem;
   font-size: 2rem;
 }
@@ -246,19 +262,16 @@ nav li {
 .jumbotron {
   margin: 0;
   padding-top: 112px;
-  background-color: #60899f;
-  /*
+  background-image: url("../images/dose-media.jpg");
   background-size: cover;
-  background-blend-mode: luminosity;*/
 }
 
-/*
 .parallax {
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}*/
+}
 
 .jumbotron p {
   font-size: 1.3rem;
@@ -266,12 +279,11 @@ nav li {
 }
 
 .jumbotron .title {
-  font-family: 'Lato';
+  font-family: 'Alta','Lato';
   font-size: 3rem;
 }
 #home .jumbotron .text-content {
   padding: 2rem;
-  color: white;
 }
 
 .inside {
@@ -328,7 +340,7 @@ nav li {
   }
 
   .info .title {
-    font-family: 'Alata', 'Lato';
+    font-family: 'Alta', 'Alata';
     font-weight: bold;
     letter-spacing: 0.8rem;
     padding: 1.5rem;
@@ -358,9 +370,9 @@ nav li {
   }
   .code .title {
     right: 5%;
-    margin-top: 4rem;
-    color: #60899f;
+    margin-top: 2rem;
     z-index: 2;
+    text-align: left;
 }
     .code .title, .advantage .title {
     font-size: 4rem;
@@ -371,9 +383,9 @@ nav li {
     background-color: #60899f;
     z-index: 0;
     position: absolute;
-    right: 13%;
+    right: 15%;
     width: 40%;
-    height: 22rem;
+    height: 20rem;
     margin-top: 15rem;
   }
   .colour-box-text {
@@ -442,6 +454,7 @@ nav li {
       position: relative;
       background-color: #60899f;
       color: white;
+      font-family: 'Alta';
     }
 
     .gallery span {
@@ -764,8 +777,8 @@ nav li {
       #home .jumbotron img {
         display: block;
         width: 100%;
-        height: 3rem;
-        object-position: top;
+        height: 15rem;
+        object-position: center;
         margin-top: 3rem;
         object-fit: cover;
       }
@@ -822,6 +835,7 @@ nav li {
         padding: 0.5rem;
         right: 0;
         color: black;
+        text-align: center;
       }
       .colour-box {
         right: 5%;
@@ -988,15 +1002,16 @@ nav li {
         margin: 0;
       }
       .colour-box {
-        height: 30rem;
+        height: 25rem;
       }
       .code .title {
-        right: 11%;
+        right: 13%;
         font-size: 5rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
       }
       .colour-box {
        right: 15%;
+       margin-top: 18rem;
       }
       .code p {
         margin-left: 20rem;
@@ -1012,12 +1027,16 @@ nav li {
         padding: 3rem;
         padding-top: 5rem;
       }
+      .advantage-box {
+        margin-bottom: 7rem;
+      }
 
     /* Gallery */
 
       .gallery {
         max-width: 2000px;
         margin: auto;
+        margin-bottom: 3rem;
       }
 
     /* About */
